@@ -1,0 +1,38 @@
+<!-- eval $(opam env) -->
+
+
+A functional language: 
+    defines computations as mathematical functions
+    avoids mutable state
+
+
+state: the information maintained by a computation.
+
+Mutable: can be changed. 
+
+Reality of muatability : 
+    machines are good at complicated manipulation of state
+    Humans are not good at under standing it!
+
+
+Mutability breaks referential transparency : ability to replace expression with  its value without affecting result of computation.
+
+Imperative programming:  commands spcify how to compute by destructively changing state. eg- x=x+1;
+
+Functional programming: 
+          Expressions pscify what to compute - variables never change value and functions naver have side effects.
+
+
+
+Ocaml - O = Objective  Caml = Catogorical Abstract Machine Language
+
+Features: Immutable programming
+          Algebric datatype and pattern matching - makes definition manipulation of complex data structures easy to express
+          First class function - functions can be passed around like ordinary values
+          Static type-checing - reduce number of runtime errors
+          Automatic type inference - no burden to write down type of every single varibale
+          Parametric polymorphism - enables construction of abstractions that work across many data types
+          Garbage collection - Automated memory management eliminates many runtime errors
+          Modules - Advances system for structuring large systems
+
+          
