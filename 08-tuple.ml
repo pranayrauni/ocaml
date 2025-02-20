@@ -1,11 +1,11 @@
-(* tuple is unnamed component *)
+(* tuple is unnamed component. order of components is relevant. *)
 
 (10, 20, "pm")
 
 
 (* we can give name *)
 
-type time = int * int * string
+type time = int * int * string          (* * is not multiplication. it is to show type checking. *)
 
 let t = (10, 20, "pm")
 
