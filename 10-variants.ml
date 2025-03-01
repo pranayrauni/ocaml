@@ -1,4 +1,4 @@
-(* Variants: new way to build datat type. *)
+(* Variants: new way to build data type. *)
 
 type primary_color = Red | Green | Blue
 

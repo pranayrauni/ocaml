@@ -32,7 +32,19 @@ let rec list_max (lst : 'a list) : 'a option =
       | None -> Some h
       | Some m -> Some (max h m)
     end 
+  | [] -> None;;
+
+
+(* same code can be written as following. *)
+let rec list_max lst =
+  match lst with 
+  | h :: t -> begin
+      match list_max t with
+      | None -> Some h
+      | Some m -> Some (max h m)
+    end 
   | [] -> None
+
 
 let x = list_max [1;2;3]
 let x = list_max []

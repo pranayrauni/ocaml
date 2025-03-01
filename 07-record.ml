@@ -33,3 +33,11 @@ let name_with_year s =
   | {name; year} -> name ^ " '" ^ string_of_int year;;
 
 name_with_year rbg;;
+
+
+(* mutable record *)
+type running_sum =
+  { mutable sum: float;
+    mutable sum_sq: float; (* sum of squares *)
+    mutable samples: int;
+  }

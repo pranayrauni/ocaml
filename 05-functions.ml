@@ -131,10 +131,27 @@ succ (square (square ( succ 5)));;
 
 
 
+let rec is_even x =
+    if x = 0 then true else is_odd (x - 1)
+  and is_odd x =
+    if x = 0 then false else is_even (x - 1);;
+  
+  
+  List.map ~f:is_even [0;1;2;3;4;5];;             (* base required *)
+  
+  List.map ~f:is_odd [0;1;2;3;4;5];;
+  
 
 
 
 
+(* Labeled argument *)
+
+let ratio ~num ~denom = Float.of_int num /. Float.of_int denom;;
+
+ratio ~num:3 ~denom:10;;
+
+ratio ~denom:10 ~num:3;;
 
 
 
